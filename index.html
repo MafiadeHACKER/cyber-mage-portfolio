@@ -14,10 +14,43 @@
             --darker-bg: #050508;
             --text: #e0e0ff;
         }
+
         @font-face {
             font-family: 'Hack';
             src: url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/fonts/hack-regular.woff2') format('woff2');
         }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text);
+            font-family: 'Hack', monospace;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        header {
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            border-bottom: 1px solid rgba(188, 19, 254, 0.3);
+        }
+
+
+
+
+
 
     </style>
 
