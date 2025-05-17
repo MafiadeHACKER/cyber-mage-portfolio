@@ -94,12 +94,36 @@
             100% { transform: rotate(360deg); }
         }
 
+        h1 {
+            font-size: 3.5rem;
+            margin: 1rem 0;
+            background: linear-gradient(90deg, var(--neon-purple), var(--neon-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(188, 19, 254, 0.5);
+            position: relative;
+        }
 
+        h1::after {
+            content: '|';
+            animation: blink 1s infinite;
+            color: var(--neon-blue);
+            position: absolute;
+            right: -15px;
+        }
 
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
 
-
-
-
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--neon-pink);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
 
 
 
