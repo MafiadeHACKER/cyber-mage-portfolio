@@ -259,10 +259,58 @@
             transition: width 1.5s ease-in-out;
         }
 
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
 
-        
-        
+        .project {
+            background-color: rgba(10, 10, 18, 0.7);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(188, 19, 254, 0.3);
+            transition: all 0.3s;
+            position: relative;
+        }
 
+        .project:hover {
+            transform: translateX(-10px);
+            box-shadow: 0 15px 30px rgba(188, 19, 254, 0.3);
+            border-color: var(--neon-purple);
+        }
+        
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(188, 19, 254, 0.3);
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project h3 {
+            color: var(--neon-blue);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .project-tag {
+            background-color: rgba(188, 19, 254, 0.2);
+            color: var(--neon-purple);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
 
 
 
