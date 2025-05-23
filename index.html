@@ -312,6 +312,59 @@
             font-size: 0.8rem;
         }
 
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            background-color: rgba(10, 10, 18, 0.7);
+            border: 1px solid rgba(188, 19, 254, 0.3);
+            color: var(--text);
+            padding: 0.8rem 1rem;
+            border-radius: 5px;
+            font-family: 'Hack', monospace;
+            transition: all 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-formt textarea:focus
+        .contact-form select:focus {
+            outline: none;
+            border-color: var(--neon-purple);
+            box-shadow: 0 0 10px rgba(188, 19, 254, 0.3);
+        }
+
+        .contact-form textarea {
+            grid-column: span 2;
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            grid-column: span 2;
+            background: linear-gradient(90deg, var(--neon-purple), var(--neon-blue));
+            color: var(--dark-bg);
+            border: none;
+            padding: 1rem;
+            font-size: 1 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Hack', monospace;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-submit:hover {
+            transform: translateX(-3px);
+            box-shadow: 0 10px 20px rgba(188, 19, 254, 0.3);
+        }
+
 
 
 
